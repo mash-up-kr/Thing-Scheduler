@@ -18,11 +18,11 @@ import java.util.concurrent.TimeUnit;
 public class CrawlingServiceImpl implements CrawlingService {
 
 
-    private final String SITE_URL = "https://ladder.kr/";
-    private final String TOP_ELEMENT_XPATH = "/html/body/div/div/div/div/div[3]/div[4]/div/div[1]/div[*]/div[1]/div[1]/div[2]";
-    private final String BOTTOM_ELEMENT_XPATH = "/html/body/div/div/div/div/div[3]/div[4]/div/div[2]/div[*]/div[2]/div";
-    private final String SCROLL_EVENT = "window.scrollBy(0,500)";
-    private final int MAX_SCROLL_EVENT = 20;
+    private final static String SITE_URL = "https://ladder.kr/";
+    private final static String TOP_ELEMENT_XPATH = "/html/body/div/div/div/div/div[3]/div[4]/div/div[1]/div[*]/div[1]/div[1]/div[2]";
+    private final static String BOTTOM_ELEMENT_XPATH = "/html/body/div/div/div/div/div[3]/div[4]/div/div[2]/div[*]/div[2]/div";
+    private final static String SCROLL_EVENT = "window.scrollBy(0,500)";
+    private final static int MAX_SCROLL_EVENT = 20;
     private final YouTuberService youTuberService;
 
     public CrawlingServiceImpl(YouTuberService youTuberService) {
