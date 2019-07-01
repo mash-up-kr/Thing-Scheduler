@@ -9,7 +9,7 @@ public class SiteInfoFactory {
 
     }
 
-    public static List<SiteInfo> createXpath() {
+    public static List<SiteInfo> initXpath() {
         List<SiteInfo> siteInfos = new ArrayList<>();
 
         siteInfos.add(createFoodXpath());
