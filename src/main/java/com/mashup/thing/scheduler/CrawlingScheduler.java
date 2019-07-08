@@ -1,6 +1,6 @@
 package com.mashup.thing.scheduler;
 
-import com.mashup.thing.crawling.CrawlingService;
+import com.mashup.thing.crawling.Crawling;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -9,15 +9,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class CrawlingScheduler {
 
-    private final CrawlingService crawlingService;
+    private final Crawling crawling;
 
-    public CrawlingScheduler(CrawlingService crawlingService) {
-        this.crawlingService = crawlingService;
+    public CrawlingScheduler(Crawling crawling) {
+        this.crawling = crawling;
     }
 
 
     @Scheduled(cron = "30 * * * * *")
     public void run() {
-        crawlingService.start();
+        crawling.start();
     }
 }

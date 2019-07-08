@@ -2,6 +2,7 @@ package com.mashup.thing.youtuber;
 
 import com.mashup.thing.category.CategoryType;
 import org.openqa.selenium.WebElement;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,24 +14,35 @@ public class YouTuberServiceImpl implements YouTuberService {
 
     private final YouTuberRepository youTuberRepository;
 
+    private static String NAME_NULL = "NULL";
+
     public YouTuberServiceImpl(YouTuberRepository youTuberRepository) {
         this.youTuberRepository = youTuberRepository;
     }
 
-    @Transactional
-    public void saveYouTuber(List<WebElement> topElements, List<WebElement> bottomElements, CategoryType categoryType) {
-        topElements.forEach(topElement -> {
+    public void saveYouTuber(List<WebElement> elements, CategoryType categoryType) {
+        elements.forEach(topElement -> {
             save(topElement.getText(), categoryType.getPrimaryKey());
-        });
-
-        bottomElements.forEach(bottomElement -> {
-            save(bottomElement.getText(), categoryType.getPrimaryKey());
         });
     }
 
     private void save(String name, Long categoryId) {
-        YouTuber youTuber = new YouTuber(name, categoryId);
-        youTuberRepository.save(youTuber);
+        if(isYouTuber(name, categoryId)) {
+            return;
+        }
+
+        if(!isNameNull(name)) {
+            YouTuber youTuber = new YouTuber(name, categoryId);
+            youTuberRepository.save(youTuber);
+        }
+    }
+
+    private Boolean isYouTuber(String name, Long categoryId) {
+        return youTuberRepository.findByNameAndCategoryId(name, categoryId).isPresent();
+    }
+
+    private Boolean isNameNull(String name) {
+        return name.equalsIgnoreCase(NAME_NULL);
     }
 
 }

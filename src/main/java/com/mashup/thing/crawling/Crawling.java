@@ -1,5 +1,5 @@
 package com.mashup.thing.crawling;
 
-public interface CrawlingService {
+public interface Crawling {
     void start();
 }

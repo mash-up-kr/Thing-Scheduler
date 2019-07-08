@@ -6,5 +6,5 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public interface YouTuberService {
-    void saveYouTuber(List<WebElement> topElements, List<WebElement> bottomElements, CategoryType categoryType);
+    void saveYouTuber(List<WebElement> elements, CategoryType categoryType);
 }

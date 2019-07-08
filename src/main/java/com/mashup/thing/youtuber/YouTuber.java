@@ -1,13 +1,19 @@
 package com.mashup.thing.youtuber;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 
 @Entity
 @Getter
-@Table(name = "YouTuber")
+@NoArgsConstructor
+@Table(name = "youtuber")
 public class YouTuber {
 
     @Id
