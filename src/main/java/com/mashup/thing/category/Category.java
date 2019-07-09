@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter
-@Table(name = "Category")
+@Table
 public class Category {
 
     @Id
@@ -14,5 +14,5 @@ public class Category {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private CategoryType CategoryType;
+    private CategoryType categoryType;
 }

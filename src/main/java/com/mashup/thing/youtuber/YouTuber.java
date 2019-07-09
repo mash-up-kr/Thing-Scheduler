@@ -13,7 +13,7 @@ import java.util.Set;
 @Entity
 @Getter
 @NoArgsConstructor
-@Table(name = "youtuber")
+@Table
 public class YouTuber {
 
     @Id
