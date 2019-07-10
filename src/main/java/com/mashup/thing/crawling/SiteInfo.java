@@ -10,11 +10,11 @@ import java.util.List;
 @Getter
 @Setter
 public class SiteInfo {
-    private List<String> siteXpaths;
+    private List<String> urls;
     private CategoryType categoryType;
 
     public SiteInfo() {
-        siteXpaths = new ArrayList<>();
+        urls = new ArrayList<>();
     }
 
 }

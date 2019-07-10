@@ -1,5 +1,6 @@
 package com.mashup.thing.youtuber;
 
+import com.mashup.thing.youtuber.domain.YouTuber;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

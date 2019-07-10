@@ -32,8 +32,8 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.FOOD);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[2]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[3]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=1");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=2");
 
         return siteInfo;
     }
@@ -43,8 +43,8 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.KNOWLEDGE);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[10]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[11]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=5");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=13");
 
         return siteInfo;
     }
@@ -54,7 +54,7 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.SPORTS);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[5]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=9");
 
         return siteInfo;
     }
@@ -64,8 +64,8 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.BEAUTY);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[3]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[4]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=10");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=11");
 
         return siteInfo;
     }
@@ -75,7 +75,7 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.KIDS);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[9]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=21");
 
         return siteInfo;
     }
@@ -85,7 +85,7 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.TALK);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[7]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=8");
 
         return siteInfo;
     }
@@ -95,7 +95,7 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.COMIC);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[6]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=17");
 
         return siteInfo;
     }
@@ -105,7 +105,7 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.GAME);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[4]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=19");
 
         return siteInfo;
     }
@@ -115,8 +115,8 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.MUSIC);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[6]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[1]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=12");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=16");
 
         return siteInfo;
     }
@@ -126,9 +126,9 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.DAILY);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[5]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[8]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[11]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=15");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=6");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=7");
 
         return siteInfo;
     }
@@ -138,11 +138,11 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.ENTERTAINMENT);
 
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[1]/div/div[10]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[2]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[8]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[9]");
-        siteInfo.getSiteXpaths().add("/html/body/div/div/div/div/div[3]/div[1]/div/div[2]/div/div[7]");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=18");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=14");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=3");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=4");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=20");
 
         return siteInfo;
     }

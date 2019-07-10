@@ -9,3 +9,4 @@ insert into category (category_type) VALUES ('FOOD');
 insert into category (category_type) VALUES ('ENTERTAINMENT');
 insert into category (category_type) VALUES ('MUSIC');
 insert into category (category_type) VALUES ('COMIC');
+insert into category (category_type) VALUES ('TOTAL');
