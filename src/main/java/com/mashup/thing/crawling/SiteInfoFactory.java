@@ -15,14 +15,13 @@ public class SiteInfoFactory {
         siteInfos.add(createFoodXpath());
         siteInfos.add(createKnowledgeXpath());
         siteInfos.add(createBeautyXpath());
-        siteInfos.add(createComicXpath());
+        siteInfos.add(createPetXpath());
         siteInfos.add(createDailyXpath());
         siteInfos.add(createEntertainmentXpath());
         siteInfos.add(createGameXpath());
         siteInfos.add(createKidsXpath());
         siteInfos.add(createMusicXpath());
         siteInfos.add(createSportsXpath());
-        siteInfos.add(createTalkXpath());
 
         return siteInfos;
     }
@@ -80,22 +79,12 @@ public class SiteInfoFactory {
         return siteInfo;
     }
 
-    private static SiteInfo createTalkXpath() {
+    private static SiteInfo createPetXpath() {
         SiteInfo siteInfo = new SiteInfo();
 
-        siteInfo.setCategoryType(CategoryType.TALK);
+        siteInfo.setCategoryType(CategoryType.PET);
 
-        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=8");
-
-        return siteInfo;
-    }
-
-    private static SiteInfo createComicXpath() {
-        SiteInfo siteInfo = new SiteInfo();
-
-        siteInfo.setCategoryType(CategoryType.COMIC);
-
-        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=17");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=15");
 
         return siteInfo;
     }
@@ -126,7 +115,8 @@ public class SiteInfoFactory {
 
         siteInfo.setCategoryType(CategoryType.DAILY);
 
-        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=15");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=8");
+        siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=17");
         siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=6");
         siteInfo.getUrls().add("https://ladder.kr/api/ranking/channels?categoryId=7");
 

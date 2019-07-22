@@ -16,7 +16,7 @@ public class CrawlingScheduler {
     }
 
 
-    @Scheduled(cron = "30 * * * * *")
+    @Scheduled(cron = "00 00 01 * * *")
     public void run() {
         httpXhrParsing.start();
     }
